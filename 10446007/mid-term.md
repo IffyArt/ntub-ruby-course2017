@@ -11,7 +11,10 @@
 
 ```ruby
 class Cat
-  # 請完成實作
+  attr_reader :name
+  def  initialize(name)
+    @name = name
+  end
 end
 
 kitty = Cat.new("kitty")
