@@ -58,12 +58,15 @@ Bank.transfer(10)
 > 會出現還沒有定義Bank類別中transfer方法的錯誤
 ```ruby
 class Bank
-  def transfer(amount)
-    # ...
+  def initialize(amount)
+    @amount = amount
+  end
+  def transfer
+    puts "#{@amount}"
   end
 end
-
-Bank.transfer(10)
+iffy=Bank.new(10)
+iffy.transfer
 ```
 
 5. (10 分) 請問以下方法：
