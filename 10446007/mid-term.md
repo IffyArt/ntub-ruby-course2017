@@ -77,6 +77,11 @@ link_to "刪除", products_path(product), method: :delete, class: "btn btn-defau
 
 `link_to` 方法共有幾個參數？為什麼？
 
+> 三個參數link_to 
+
+> link_to('刪除', products_path(product), {method: :delete, class: "btn btn-default"}) 
+
+
 6. (10 分) 在 Ruby 裡面常會看到冒號的寫法，例如：
 
 有的冒號靠右邊：
@@ -86,7 +91,6 @@ class Store
   has_many :products
 end
 ```
-
 有的冒號靠左邊：
 
 ```ruby
@@ -100,6 +104,11 @@ user_profile = {name: "kk", age: 18, blood_type: :b_negative}
 ```
 
 請問，這三種寫法分別代表什麼意思呢？
+> 靠在右邊的是Symbol，將東西定義為Symbol的類別實體
+
+> 靠在左是將參數給予值，像sass得設定
+
+> 所以兩種並不衝突可同時存在，第三種是將型態設定成某種Symbol
 
 ## Rails 題目 (30 分)
 
